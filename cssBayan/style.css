@@ -109,7 +109,8 @@ h1 {
 .mem-img {
     position: relative;
     width: 240px;
-    height: 240px;    
+    height: 240px; 
+    margin-left: 640px;
     cursor: pointer;
 }
 
