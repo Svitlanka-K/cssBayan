@@ -138,7 +138,6 @@ h1 {
     display: none;
 }
 
-
 .mem-photo {          /*---Анимация плавного появления мема---*/
     opacity: 0;
     animation: ani 1s forwards;
@@ -147,4 +146,77 @@ h1 {
   @keyframes ani {
     0% {opacity: 0;}
     100% {opacity: 1;}
-  }                         /*-----------*/
+  }
+
+@media screen and (max-width: 820px) { /*---------820px-----------*/
+
+    .fild {                        
+        width: 820px;
+        height: 1180px;        
+    }
+    
+    .title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    .line {        
+        width: 700px;        
+    }
+    
+    .mem-btn {
+        width: 700px;           
+    }
+    
+    h1 {
+        font-size: 20px;
+        line-height: 25px;          
+    }
+  
+    .mem-photo {       
+        width: 700px;       
+    }
+    
+    .mem-img {
+        margin-left: 230px;       
+    }  
+}
+
+@media screen and (max-width: 380px) { /*---------320px-----------*/
+
+    .fild {                        
+        width: 320px;
+        height: 568px;        
+    }
+    
+    .title {
+        margin: 5px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .line {        
+        width: 300px;    
+        margin: 5px;    
+    }
+    
+    .mem-btn {
+        width: 300px;           
+    }
+    
+    h1 {
+        font-size: 15px;
+        line-height: 20px;          
+    }
+  
+    .mem-photo {       
+        width: 300px;    
+        height: 200px;  
+    }
+    
+    .mem-img {
+        margin-left: 50px;     
+        width: 200px;
+        height: 200px;   
+    }   
+}
