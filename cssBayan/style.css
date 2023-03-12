@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    position: relative;
+    align-items: center;   
+    min-width: 320px;        
+}
+
+.fild {                        
+    position: relative;
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;  
+    background-color: #dde2dc; 
+    border: 4px;
+    border-radius: 20px;     
+    border-style: solid;    
+    border-color: #757272;
+}
+
+.title {
+    position: relative;
+    font-family: 'Inika', sans-serif;
+    font-size: 30px;
+    line-height: 35px;    
+    font-weight: 700;  
+    color: rgb(0, 0, 0);
+    margin: 50px auto;
+}
+
+.line {
+    position: relative;
+    display: flex;
+    width: 1500px;
+    height: 1px;
+    margin: 20px auto;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.fild-container {
+    position: relative;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;      
+}
+
+.mem-btn {
+    position: relative;
+    display: flex;    
+    flex-direction: row;
+    align-items: center;     
+    justify-content: space-between;
+    width: 1500px;
+    height: 45px;    
+}
+
+.mem-title {
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Inika', sans-serif;
+    font-size: 25px;
+    line-height: 30px;  
+    font-weight: 400;  
+    color: rgb(62, 16, 231);    
+}
+
+.btn-cross {
+    position: relative;
+    display: flex;    
+    flex-direction: row;
+}
+
+.cross-x {
+    display: none;
+    cursor: pointer;
+}
+
+.cross-plus {
+    display: none;
+    cursor: pointer;
+}
+
+.mem-photo {
+    position: relative;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    width: 1500px;
+    height: 242px;    
+    display: none;    
+}
+
+.mem-img {
+    position: relative;
+    width: 240px;
+    height: 240px;    
+    cursor: pointer;
+}
+
+.fild-container:hover .cross-plus {
+    display: block;
+}
+
+.mem:hover .cross-x {
+    display: block;
+}
+
+.mem:hover .mem-photo {
+    display: block;   
+}
+
+.mem:hover h1 {
+    color: rgb(0, 0, 0); 
+}
+
+.mem-btn:hover .cross-plus {
+    display: none;
+}
+
+.mem:hover .cross-plus {
+    display: none;
+}
+
+
+.mem-photo {          /*---Анимация плавного появления мема---*/
+    opacity: 0;
+    animation: ani 1s forwards;
+  }
+  
+  @keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }                         /*-----------*/
+
+
+#wrapTrigger {
+    display: none;
+  }
+  .wrap {
+    color: red;
+  }
+  input:checked + .wrap {
+    color: blue;
+  }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) { /*---------820px-----------*/
+
+    header {                        
+        position: relative;
+        width: 7820px;
+        height: 1180px;
+        margin: 0 auto;
+        background-color: #EDF2EC;
+    }  
+}
+
+@media screen and (max-width: 380px) { /*---------320px-----------*/
+
+    header {                        
+        position: relative;
+        width: 320px;
+        height: 568px;
+        margin: 0 auto;
+        background-color: #EDF2EC;
+    }    
+         
+}
